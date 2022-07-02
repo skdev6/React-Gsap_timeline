@@ -1,0 +1,35 @@
+@mixin link($color, $hoverColor) {
+	border-bottom: 2px solid $color;
+	color: $color;
+	cursor: pointer;
+	padding-left: 2px;
+	padding-right: 2px;
+	text-decoration: none;
+	transition: 120ms linear;
+	transition-property: background-color, color;
+
+	&:hover {
+		background-color: $color;
+		color: $hoverColor;
+	}
+}
+
+.bold {
+	font-weight: 500
+}
+
+.italic {
+	font-style: italic
+}
+
+.link-white {
+	@include link($dds-global-color-white-hex, $dds-global-color-black-hex);
+}
+
+.link-black {
+	@include link($dds-global-color-black-hex, $dds-global-color-white-hex);
+}
+
+.link-dark-gray {
+	@include link($dds-global-color-super-dark-gray-hex, $dds-global-color-white-hex);
+}

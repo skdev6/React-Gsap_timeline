@@ -1,0 +1,93 @@
+@import '../sass/custom-variables.scss';
+
+.app {
+  all: initial;
+  align-items: center;
+  background-color: #b42ec0;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  img {
+    max-width: none !important;
+  }
+}
+
+.animated-timeline-section {
+  width: 100vw;
+  display: block;
+  padding: 0 64px;
+}
+
+.parallax-content {
+  padding: 64px 0;
+}
+
+.opportunities-section {
+  background-color: #ffffff;
+  width: 100vw;
+  padding: 164px 64px;
+}
+
+.case-study-section {
+  background-color: #f3f3f3;
+  width: 100vw;
+  padding: 164px 64px;
+}
+
+@media only screen and (max-width: 992px) {
+.parallax-content{
+  padding: 24px 0;
+  height: 100vh !important;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  // .opportunities-section {
+  //   padding: 64px 15px;
+  // }
+  // .parallax-content {
+  //   padding: 0;
+  //   overflow: auto;
+  // }
+ 
+  .case-study-section {
+    padding: 64px 15px;
+  }
+  .animated-timeline-section{
+		padding: 0 25px;
+	}
+  .parallax-content {
+    padding: 0px 0 0px;
+    height: 100vh !important;
+    margin-top: 51px;
+}
+}
+.timelineSection{
+  width: 100%;
+  background-color: #051C2C; 
+  @media only screen and (min-width: 991.98px){
+      padding-top: 120px;
+      padding-bottom: 120px;
+      padding-left: 100px;
+      padding-right: 100px; 
+  }
+  @media only screen and (max-width: 1199.98px){
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 80px;
+      padding-bottom: 80px;
+  }
+  @media only screen and (max-width: 767.98px){
+      padding-left: 15px;
+      padding-right: 15px; 
+  } 
+}

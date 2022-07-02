@@ -1,0 +1,142 @@
+// $icons: (
+// 	arrow-left: 'e90d',
+// 	arrow-right: 'e909',
+// 	arrow-up: 'e90b',
+// 	arrow-down: 'e901',
+// 	link-arrow-left: 'e610',
+// 	link-arrow: 'e608',
+// 	link-arrow-right: 'e608',
+// 	link-arrow-up: 'e946',
+// 	link-arrow-down: 'e947',
+// 	close: 'e934',
+// 	download: 'e913',
+// 	email: 'e91a',
+// 	external: 'e915',
+// 	check: 'e612',
+// 	menu: 'e917',
+// 	print: 'e91e',
+// 	search: 'e927',
+// 	share: 'e929',
+// 	info: 'e92a',
+// 	alert: 'e914',
+// 	fullscreen-arrows: 'e906',
+// 	globe: 'e907',
+// 	play: 'e908',
+// 	plus-no-circle: 'e91d',
+// 	minus-no-circle: 'e93c',
+// 	checkbox-checked: 'e910',
+// 	checkbox-unchecked: 'e911',
+// 	radio-btn-selected: 'e91f',
+// 	radio-btn-unselected: 'e920',
+// 	search-results-pushpin: 'e925',
+// 	phone: 'e933',
+// 	zoom-out: 'e935',
+// 	zoom-in: 'e936',
+// 	rotate: 'e938',
+// 	person: 'e939',
+// 	edit: 'e93a',
+// 	delete: 'e93b',
+// 	filter: 'e948',
+// 	logo: 'e94c',
+// 	careers-logo-mobile: 'e903',
+// 	careers-logo: 'e904',
+// 	digital-logo: 'e905',
+// 	indent-decrease: 'e93f',
+// 	indent-increase: 'e940',
+// 	list: 'e93e',
+// 	link: 'e944',
+// 	underline: 'e942',
+// 	italic: 'e943',
+// 	bold: 'e941',
+// 	medium: 'e900',
+// 	linkedin: 'e60b',
+// 	linkedin2: 'e949',
+// 	linkedin-thin: 'e949',
+// 	instagram: 'e902',
+// 	twitter: 'e60c',
+// 	youtube: 'e61e',
+// 	facebook: 'e60d',
+// 	facebook2: 'e945',
+// 	facebook-thin: 'e931',
+// 	google-plus: 'e92c',
+// 	rss: 'e60f',
+// 	share2: 'e94b',
+// 	radial-download: 'e912',
+// 	radial-left: 'e918',
+// 	radial-minus: 'e91b',
+// 	radial-plus: 'e91c',
+// 	radial-right: 'e921',
+// 	radial-share: 'e928',
+// 	radial-x: 'e92b',
+// 	radial-medium: 'e90a',
+// 	radial-rss: 'e90c',
+// 	radial-youtube: 'e90e',
+// 	radial-facebook: 'e90f',
+// 	radial-twitter: 'e916',
+// 	radial-instagram: 'e92d',
+// 	radial-linkedin: 'e919',
+// 	radial-pause: 'e922',
+// 	radial-play: 'e923',
+// 	radial-pause-thin: 'e924',
+// 	radial-play-thin: 'e926',
+// 	radial-share2: 'e937',
+// 	radial-email: 'e92e',
+// 	radial-print: 'e93d',
+// 	industry: 'e920',
+// 	interest: 'e920',
+// 	function: 'e920',
+// 	location: 'e925',
+// 	youtube2: 'e61e',
+// 	cross: 'e934',
+// 	close-thin: 'e934',
+// 	checkmark-thin: 'e612',
+// 	checkmark: 'e612',
+// 	arrow-left-thin: 'e90d',
+// 	arrow-right-thin: 'e909',
+// 	arrow-up-thin: 'e90b',
+// 	arrow-down-thin: 'e901',
+// 	caret-down: 'e901',
+// 	search-thick: 'e927',
+// 	upload: 'e929',
+// 	tool-tip-i: 'e92a',
+// 	profile: 'e930',
+// 	profile-fill: 'e92f',
+// 	company: 'e94a',
+// 	eye: 'e94d',
+// 	eye-fill: 'e94e',
+// 	badge: 'e94f',
+// 	briefcase: 'e950',
+// 	calendar: 'e951',
+// 	download2: 'e952',
+// 	bookmark-fill: 'e953',
+// 	bookmark: 'e954',
+// 	status-error: 'e955'
+// );
+
+// // @function get-icon --- returns the unicode point mapped to the given icon name/class, from the $icons map ^
+// // which might be useful since you can't do @extend .mck-whatever-icon inside a media query
+// // future goal: expand this into a fully dynamic mixin that can replace icomoon's generated style rules
+// // Usage:
+
+// @function get-icon($name) {
+// 	@if map-has-key($icons, $name) {
+// 		$icon-code: map_get($icons, $name);
+// 		@return unicode($icon-code);
+// 	}
+// 	@else {
+// 		@warn 'No icon stored under that name - make sure to update the $icons map in icons.scss whenever you add a new icon! \a Current icons: \a #{map_keys($icons)} \a ';
+// 	}
+// }
+
+// // A shorter way of doing the same - use this if you don't want to explicitly
+// // give your element a "mck-whatever-icon" class in the markup
+
+// @mixin icon($name) {
+// 	&:before {
+// 		// stylelint-disable-next-line font-family-no-missing-generic-family-keyword
+// 		font-family: 'mck-icons';
+// 		content: get-icon($name);
+// 		font-style: normal;
+// 		font-weight: 400;
+// 	}
+// }

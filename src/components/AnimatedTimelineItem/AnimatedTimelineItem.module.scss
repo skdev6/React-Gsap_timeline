@@ -1,0 +1,378 @@
+.parallaxItemContainer {
+	display: flex;
+	min-height: 70px;
+
+	transition: all linear 150ms;
+	position: relative;
+
+	.parallaxItemDescriptionWrapper {
+		height: 222px;
+		display: flex;
+		align-items: flex-end;
+	}
+
+	.parallaxItemDescription {
+		width: 418px;
+		color: #ffffff;
+		font-size: 24px;
+		font-weight: 300;
+		letter-spacing: 0;
+		line-height: 38px;
+		margin: 0;
+	}
+
+	&:last-child {
+		.parallaxItemContent {
+			border-bottom: 1px solid rgba(255, 255, 255, .3);
+		}
+	}
+}
+
+.parallaxItemContainerActive {
+	.parallaxItemContent {
+		border-top: 2px solid rgba(255, 255, 255, 1);
+		border-bottom: 2px solid rgba(255, 255, 255, 1);
+	}
+
+	&:last-child {
+		.parallaxItemContent {
+			border-bottom: 2px solid rgba(255, 255, 255, 1);
+		}
+	}
+
+	&+.parallaxItemContainer {
+		.parallaxItemContent {
+			border-top: 0px !important;
+		}
+
+		.parallaxItemYear {
+			color: #2972FF;
+			font-size: 20px;
+			font-weight: 500;
+			letter-spacing: 0;
+			line-height: 26px;
+			opacity: 1;
+		}
+	}
+}
+
+.decadeName {
+	color: #FFFFFF;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 0.75px;
+	line-height: 30px;
+	text-transform: uppercase;
+	margin-top: 25px;
+}
+
+.subname {
+	color: #5E9DFF;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 0;
+	line-height: 14px;
+	margin-left: 16px;
+}
+
+.parallaxItemContent {
+	border-top: 1px solid rgba(255, 255, 255, .3);
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	// overflow: hidden;
+}
+
+.parallaxItemYear,
+.parallaxItemEndYear {
+	opacity: 0.5;
+	margin-top: -25%;
+	display: block;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 300;
+	letter-spacing: 0;
+	line-height: 22px;
+}
+
+.parallaxItemYearActive {
+	color: #2972FF;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 0;
+	line-height: 26px;
+	opacity: 1;
+}
+
+.parallaxItemMarkings {
+	padding-right: 4em;
+	width: 7em;
+	margin-right: 3em;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.parallaxItemMarkingsBar {
+	background: #5E9DFF;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 22px;
+	// background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 100%);
+	// background-image: linear-gradient(#5E9DFF 75%, #5e9dff40);
+}
+
+.parallaxItemMarkingBarStarting {
+	background-image: linear-gradient(0deg, rgba(94, 157, 255, 0) 0%, rgba(5, 28, 44, .6) 100%);
+	height: 50px;
+	bottom: auto;
+}
+
+.parallaxItemMarkingBarEnding {
+	background-image: linear-gradient(0deg, rgba(5, 28, 44, .6) 0%, rgba(94, 157, 255, 0) 100%);
+	height: 50px;
+	bottom: 0;
+	top: auto;
+}
+
+.parallaxItemContentLeftSide {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.parallaxItemHeroKey {
+	height: 215px;
+	width: 197px;
+	color: #ffffff;
+	font-size: 220px;
+	letter-spacing: 0;
+	line-height: 1em;
+	margin: 0;
+	padding: 0;
+}
+
+.parallaxItemHeroDetail {
+	height: 72px;
+	width: 500px;
+	color: #ffffff;
+	font-size: 36px;
+	letter-spacing: 0;
+	line-height: 1em;
+	margin: 0;
+	padding: 0;
+}
+
+.parallaxItemContentRightSide {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.parallaxItemFloatingContainer {
+	position: absolute;
+}
+
+.parallaxItemStretchedContainer {
+	display: flex;
+	flex: 1;
+}
+
+.spanText {
+	color: #5E9DFF;
+}
+
+
+@media only screen and (max-width: 1024px) {
+	.parallax-content {
+		padding: 0 64px 64px;
+		margin-top: 180px;
+	}
+
+	.parallaxItemContainer {
+		max-height: 400px;
+	}
+
+	.parallaxItemDescriptionWrapper .parallaxItemDescription {
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 992px) {
+	.parallax-content {
+		padding: 0 0px 64px;
+	}
+
+	.parallaxItemDescriptionWrapper .parallaxItemDescription {
+		font-size: 18px;
+		line-height: 32px;
+	}
+
+	.parallaxItemContentLeftSide {
+		align-items: start;
+	}
+
+	.parallaxItemContentRightSide {
+		padding: 20px 0;
+		align-items: self-start;
+	}
+
+	.decadeName {
+		margin-bottom: 20px;
+	}
+
+	.parallaxItemHeroKey {
+		font-size: 120px;
+		height: inherit;
+	}
+
+	.parallaxItemHeroDetail {
+		width: 100%;
+		font-size: 24px;
+		padding-right: 15px;
+	}
+
+	.parallaxItemContainer {
+		max-height: 400px;
+	}
+
+	.parallaxItemContainer .parallaxItemDescription {
+		margin-bottom: 0 !important;
+	}
+
+	.parallaxItemContainer .parallaxItemDescriptionWrapper {
+		align-items: self-start;
+		overflow: auto;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.parallaxItemMarkings {
+		padding-right: 2em;
+		width: 4em;
+		margin-right: 1em;
+	}
+
+	.parallaxItemContainer .parallaxItemDescriptionWrapper {
+		align-items: flex-start;
+		margin-top: 0;
+		height: auto;
+	}
+
+	.parallaxItemStretchedContainer {
+		flex-direction: inherit;
+	}
+
+	.animated-timeline-section {
+		padding: 0 25px;
+	}
+
+	.decadeName h3 {
+		font-size: 16px;
+	}
+
+	.parallaxItemHeroKey {
+		height: 65px;
+		width: 100%;
+		font-size: 60px;
+		font-weight: 300;
+		line-height: 30px;
+	}
+
+	.parallaxItemMarkingsBar {
+		width: 12px;
+	}
+
+	.parallaxItemHeroDetail {
+		height: 42px;
+		width: 100%;
+		font-size: 30px;
+	}
+
+	.parallaxItemContentLeftSide {
+		align-items: self-start;
+		flex: initial;
+	}
+
+	.parallaxItemDescriptionWrapper .parallaxItemDescription {
+		width: 100%;
+		font-size: 16px;
+		font-weight: 300;
+		letter-spacing: 0;
+		line-height: 27px;
+	}
+
+	.parallaxItemContentRightSide {
+		align-items: end;
+	}
+
+	.parallaxItemContainer {
+		max-height: 200px;
+		padding-bottom: 0px;
+	}
+
+	.parallaxItemContainer.parallaxItemContainerActive {
+		max-height: 310px;
+	}
+
+	.parallaxItemContainer .parallaxItemDescription {
+		width: 100%;
+		font-size: 16px;
+		line-height: 30px;
+	}
+
+	.widthItems {
+		width: 100% !important;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	.parallaxItemContainer.parallaxItemContainerActive {
+		max-height: 410px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.parallaxItemHeroKey {
+		height: 29px;
+		font-size: 34px;
+		line-height: 4px;
+	}
+
+	.parallaxItemHeroDetail {
+		height: 26px;
+		font-size: 18px;
+	}
+
+	.parallaxItemContainer .parallaxItemDescription {
+		line-height: 26px;
+	}
+
+	.decadeName {
+		margin-top: 10px;
+	}
+
+	.parallaxItemContentRightSide {
+		align-items: start;
+		padding: 0px 0 20px;
+	}
+
+	.parallaxItemContainer.parallaxItemContainerActive .parallaxItemFloatingContainer {
+		position: inherit;
+	}
+
+	.parallaxItemContainer.parallaxItemContainerActive {
+		max-height: 370px;
+	}
+
+	.parallaxItemContainer {
+		max-height: 220px;
+	}
+}

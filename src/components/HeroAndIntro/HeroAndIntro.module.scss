@@ -1,0 +1,204 @@
+.container {
+	width: 100%;
+	height: auto;
+	color: #ffffff;
+}
+
+.hero {
+	width: 100%;
+	height: 100vh;
+	position: sticky;
+	top: 0;
+	animation: slide-up;
+	animation-delay: 2000ms;
+	animation-timing-function: ease-out;
+	animation-duration: 7s;
+	animation-fill-mode: forwards;
+	animation-direction: normal;
+	// overflow: hidden;
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.main {
+	margin-bottom: 100px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 100px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	.wrapper {
+		max-width: 700px;
+		margin: 0 auto;
+
+		.secondTitle {
+			font-size: 144px;
+			font-weight: 700;
+			line-height: 144px;
+			letter-spacing: normal;
+			text-align: center;
+			margin-bottom: 50px;
+			margin-top: 20px;
+			font-family: 'Bower';
+
+			div {
+				display: flex;
+				// overflow: hidden;
+				height: 160px;
+
+				p {
+					margin: 0;
+					padding: 0;
+					opacity: 0;
+				}
+
+				p {
+					animation: heading-text 0.6s ease-in forwards;
+				}
+
+				@keyframes heading-text {
+					0% {
+						margin-top: 160px;
+						opacity: 1;
+					}
+
+					100% {
+						opacity: 1;
+						margin-top: 0px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.thirdSubtitle {
+	font-size: 28px;
+	font-weight: 300;
+	line-height: 36px;
+	letter-spacing: normal;
+	text-align: center;
+	// padding-bottom: 149px;
+
+	// div {
+	// 	overflow: hidden;
+	// }
+}
+
+.firstSubtitle {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.6px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.content {
+	padding-top: 100px;
+	// padding-bottom: 50%;
+	width: 100%;
+	margin: 0 auto;
+	background: linear-gradient(180deg,
+			rgba(12, 60, 87, 0) 0%,
+			#ad259be6 35%,
+			#ad259b 45%);
+}
+
+.contentInner {
+	// overflow: hidden;
+	max-width: 700px;
+	margin: 0 auto;
+	// padding-top: 100px;
+}
+
+.allParagraphs {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 36px;
+	letter-spacing: normal;
+	text-align: left;
+	margin-bottom: 25px;
+}
+
+.heatingAndCooking {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 36px;
+	letter-spacing: normal;
+	text-align: left;
+	margin-bottom: 38px;
+	// margin-top: 60px;
+}
+
+@media screen and (max-width: 768px) {
+	.main {
+		.wrapper {
+			.secondTitle {
+				font-size: 114px;
+				line-height: 114px;
+			}
+			.thirdSubtitle {
+				padding: 0 30px;
+				line-height: 40px;
+			}
+		}
+	}
+	.contentInner {
+		max-width: 100%;
+		padding: 0 60px;
+	}
+}
+
+@media screen and (max-width: 525px) {
+	.main {
+		.wrapper {
+			.secondTitle {
+				font-size: 72px;
+				line-height: 72px;
+				margin-bottom: 30px;
+			}
+			.thirdSubtitle {
+				padding: 0 15px;
+				line-height: 36px;
+				font-size: 24px;
+			}
+		}
+	}
+	.contentInner {
+		max-width: 100%;
+		padding: 0 20px;
+	}
+	.heatingAndCooking{
+		margin-bottom: 28px;
+	}
+	.allParagraphs{
+		font-size: 18px;
+		line-height: 34px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.main {
+		.wrapper {
+			.thirdSubtitle {
+				line-height: 32px;
+				font-size: 20px;
+			}
+		}
+	}
+}

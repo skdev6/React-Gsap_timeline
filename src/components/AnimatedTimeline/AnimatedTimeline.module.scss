@@ -1,0 +1,89 @@
+.parallaxContainer {
+	width: 100%;
+	// height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	background-color: #ad259b;
+
+	position: sticky;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+	.introContainer {
+		max-width: 50%;
+		flex: 0,
+	}
+
+	.documentBreadcrumb {
+		height: 31px;
+		width: 190px;
+		color: #FFFFFF;
+		font-size: 16px;
+		font-weight: 300;
+		letter-spacing: 0;
+		line-height: 24px;
+	}
+
+	.documentTitle {
+		height: 69px;
+		width: 481px;
+		color: #FFFFFF;
+		font-family: Bower;
+		font-size: 44px;
+		font-weight: bold;
+		letter-spacing: 0;
+		line-height: 52px;
+	}
+
+	.documentDescription {
+		line-height: 2em;
+	}
+}
+
+.itemsContainer {
+	display: flex;
+	flex: 1;
+
+	.itemsProgressBarContainer {
+		width: 35px;
+		margin-right: 2em;
+		position: relative;
+	}
+
+	.itemsProgressBar {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	.itemsAccordion {
+		flex: 1;
+		width: 100%;
+		display: inline-block;
+	}
+}
+
+.footNotes {
+	padding-top: 2em;
+	color: #FFFFFF;
+	font-size: 14px;
+}
+
+
+@media screen and (max-width: 768px) {
+	.parallaxContainer .documentTitle {
+		width: 100% !important;
+		font-size: 24px;
+		height: 48px;
+		letter-spacing: 0;
+		line-height: 32px;
+	}
+	.introContainer {
+		max-width: 100% !important;
+	}
+}
