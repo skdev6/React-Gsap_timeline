@@ -24,9 +24,8 @@ const Timeline = () => {
         end:()=>{ 
           return `+=${tlItems.current.length * 1200}`;  
         }, 
-        scrub:0.5, 
+        scrub:0.5, // true or secound value
         pin:true,
-        pinType:'fixed',
       }
     });
     let tlItemLength = tlItems.current.length;

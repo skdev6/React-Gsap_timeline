@@ -13,12 +13,33 @@ $min_sm_size:'(min-width: 575.98px)';
 $sm_mobile: 'only screen and (max-width: 479px)';
 $min_sm_mobile: 'only screen and (min-width: 479px)';
 
+// .timelineArea{
+//     width: 100%;
+//     background-color: #051C2C; 
+//     height: 100vh; 
+//     @media only screen and (min-width: 991.98px){
+//         padding-top: 120px;
+//         padding-bottom: 120px;
+//         padding-left: 100px;
+//         padding-right: 100px; 
+//     }
+//     @media only screen and (max-width: 1199.98px){
+//         padding-left: 50px;
+//         padding-right: 50px;
+//         padding-top: 80px;
+//         padding-bottom: 80px;
+//     }
+//     @media only screen and (max-width: 767.98px){
+//         padding-left: 15px;
+//         padding-right: 15px; 
+//     } 
+// }
 
 .timelineWrapper{
     color:#fff;
-    max-width: 1280px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
+    height: 100vh; 
     .timelineDes{ 
         width:50%; 
         @media #{$xl_size}{
